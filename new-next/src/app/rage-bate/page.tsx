@@ -4,6 +4,8 @@
 import ButtonToChange from "@/components/Button";
 import ChangeHeader from "@/components/Header";
 import TextChangeInput from "@/components/input";
+import { ProgressDemo } from "@/components/my-progress";
+import MyHeader from "@/components/ui/my-header";
 import { useEffect, useState } from "react";
 
 export default function Home() {
@@ -11,12 +13,9 @@ export default function Home() {
     const [input, setInput] = useState<string|null>(null);
     return (
     <>
-
-        <ChangeHeader text={text}/>
-
-        <ButtonToChange setText={setText} input={input}/>
-
-        <TextChangeInput setInput={setInput}/>
+        <MyHeader></MyHeader>
+        
+        <ProgressDemo></ProgressDemo>
     </>
     )
 }
