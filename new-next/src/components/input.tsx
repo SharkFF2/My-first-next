@@ -1,7 +1,7 @@
-interface ButtonPrps {
+interface InputProps {
     setInput: (string : string) => void;
 }
-export default function TextChangeInput({setInput}: ButtonPrps) {
+export default function TextChangeInput({setInput}: InputProps) {
     return (
 
         <input
